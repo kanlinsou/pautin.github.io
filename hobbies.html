@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr"> 
+ <head> 
+ <meta charset="UTF-8">
+  <style>
+        p {
+            opacity: 0; /* Cache les paragraphes au début */
+            transition: opacity 1s; /* Transition douce pour l'affichage */
+        }
+    </style> 
+ <style type="text/css" id="dcoder_stylesheet">body {margin: 30px; font-family: Arial, sans-serif;}
+h1 {color: blue; font-weight: bolder; font-size: 32px;}
+p {line-height: 1.5; text-align: justify; margin: 10px; font-size: 18px;}</style>
+</head> 
+ <body> 
+  <h1> Hobbies </h1> 
+  <p>Lecture</p> 
+  <p>Sport</p> 
+  <p>Marche</p> 
+  <p>Bricolage</p> 
+  <p>Jardinage</p> 
+  <p>Sortie découverte</p> 
+  
+<a href="index.html">Retour à la page d'accueil</a>
+ 
+<script type="text/javascript" id="dcoder_script">// Sélectionne tous les paragraphes de la page
+    const paragraphs = document.querySelectorAll('p');
+    let currentParagraph = 0;
+
+    function displayNextParagraph() {
+        if (currentParagraph < paragraphs.length) {
+            // Affiche le paragraphe actuel en modifiant son opacity
+            paragraphs[currentParagraph].style.opacity = 1;
+            currentParagraph++;
+        } else {
+            // Arrête l'intervalle une fois que tous les paragraphes sont affichés
+            clearInterval(interval);
+        }
+    }
+
+    // Affiche un paragraphe toutes les 500 ms
+    const interval = setInterval(displayNextParagraph, 500);</script></body></html>

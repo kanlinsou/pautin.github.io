@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="accueil.css"/>
+  <script src="accueil.js"></script>
+  <title>Accueil</title>
+ </head> 
+ <body> 
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰ <!-- Icône hamburger --> <!-- Menu déroulant --> 
+   <nav id="menu" class="menu"> 
+    <ul> 
+     <li><a href="#section1">Description</a></li> 
+     <li><a href="#section2">Domaines de compétences</a></li> 
+     <li><a href="#section3">Expériences professionnelles</a></li> 
+     <li><a href="#section4">Contacts</a></li> 
+	 <li><a href="Competences.html">compétences</a></li>
+	 <li><a href="Qualites.html">Qualités</a></li>
+	 <li><a href="hobbies.html">Hobbies</a></li>
+    </ul> 
+   </nav> 
+   
+   <div class="carousel">
+    <img class="carousel-image" src="image1.jpg" alt="Image 1">
+    <img class="carousel-image" src="image2.jpg" alt="Image 2">
+    <img class="carousel-image" src="image3.jpg" alt="Image 3">
+    
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+   
+   <h1 id="section1">Description </h1> 
+   <p>Je suis Pautin KANLINSOU étudiant en Master 2 en sciences et techniques des activités socio-éducatives option Andragogie à l'institut national de la jeunesse, de l'éducation physique et sportive (INJEPS/UAC)</p> 
+   <p>Passionné par le numérique, je suis actuellement une formation en développement Web et mobile. Des formations formations organisées par l'organisation internationale de la francophonie (OIF) à travers son programme D-CLIC.</p> 
+   <h2>Domaines de compétences </h2> 
+   <ul> 
+    <li class="box-highlight">Éducation et la formation </li> 
+    <li class="box-highlight">L'intervention socio-éducative</li> 
+    <li class="box-highlight">Gestion de projet </li> 
+    <li class="box-highlight">Développement Web et mobile</li> 
+   </ul> 
+   <h3 id="section2">Diplômes académique</h3> 
+   <table> 
+    <tbody> 
+     <tr> 
+      <th>Diplôme </th> 
+      <th>Année d'obtention</th> 
+     </tr> 
+     <tr> 
+      <td>Master professionnel en STASE Option Andragogie</td> 
+      <td>En cours</td> 
+     </tr> 
+     <tr> 
+      <td>Licence professionnelle en STASE Option Andragogie</td> 
+      <td>2023</td> 
+     </tr> 
+     <tr> 
+      <td>Baccalauréat scientifique</td> 
+      <td>2020</td> 
+     </tr> 
+     <tr> 
+      <td>Brevet d'études du premier cycle (BEPC)</td> 
+      <td>2017</td> 
+     </tr> 
+     <tr> 
+      <td>Certificat d'études primaires (CEP)</td> 
+      <td>2012</td> 
+     </tr> 
+    </tbody> 
+   </table> 
+   <h4>Formations certifiantes</h4> 
+   <table> 
+    <tbody> 
+     <tr> 
+      <th>Formation </th> 
+      <th>Année</th> 
+     </tr> 
+     <tr> 
+      <td>Certificat sur les fondamentaux de la gestion de projet</td> 
+      <td>2023</td> 
+     </tr> 
+     <tr> 
+      <td>Embarquez vos apprenants : destination pédagogie active</td> 
+      <td>2024</td> 
+     </tr> 
+     <tr> 
+      <td>Développement Web</td> 
+      <td>2024</td> 
+     </tr> 
+     <tr> 
+      <td>Développement mobile </td> 
+      <td>2024</td> 
+     </tr> 
+    </tbody> 
+   </table> 
+   <h5 id="section3">Expériences professionnelles</h5> 
+   <ol> 
+    <li class="em">Assistant chargé des opérations (Stagiaire Avril-Novembre 2023)</li> 
+    <p>* Participation à des missions d'élaboration de Plan Stratégique</p> 
+    <p>* Participation à des missions d'audit organisationnel (Volet RH)</p> 
+    <p>* Identification et analyse de besoins en formation</p> 
+    <p>* Conception de support de formation</p> 
+    <p>* Animation d'ateliers de formation</p> 
+    <p>* Études d'impact</p> 
+    <p>* Montage de dossier d'appel d'offres</p> 
+    <p>* etc.</p> 
+    <li class="em">Animateur Communautaire (Stagiaire Mai-Juillet 2024)</li> 
+    <p>* Diagnostic communautaire</p> 
+    <p>* Rédaction de projets</p> 
+    <p>* Animation de séances educatives</p> 
+    <li class="em">Agent enquêteur lors de l'enquête nationale budget temps (Février-Avril 2024)</li> 
+    <p>* Préparation des outils de données</p> 
+    <p>* Administration des questionnaires</p> 
+    <p>* Revu et soumission des données</p> 
+   </ol> 
+   <h5>Demander de Renseignements</h5> 
+   <form action="traitement_formulaire.php" method="post"> <label for="email">Adresse e-mail :</label> 
+    <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required> <label for="objet">Objet :</label> 
+    <input type="text" id="objet" name="objet" placeholder="Objet de la demande" required> <label for="message">Message :</label> <textarea id="message" name="message" placeholder="Votre message" required></textarea> <button type="submit">Envoyer</button> 
+   </form> 
+   <h6 id="section4">Contacts</h6>
+   <ul ckass="span">
+    <p>Téléphone : <a href="Tel: +22966470091">+229 66-47-00-91</a></p>
+    <p>WhatsApp : <a href="https://wa.me/22966470091">+22966470091</a></p>
+    <p>Adresse e-mail : <a href="mailto:kanlinsoupautin7@gmail.com">kanlinsoupautin7@gmail.com</a></p>
+   </ul> 
+  </div> 
+ 
+</body>
+</html>
